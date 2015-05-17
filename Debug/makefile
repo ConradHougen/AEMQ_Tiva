@@ -8,6 +8,8 @@ CG_TOOL_ROOT := C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.2
 
 ORDERED_OBJS += \
 "./main.obj" \
+"./motor_ctl.obj" \
+"./setup.obj" \
 "./tm4c123gh6pge_startup_ccs.obj" \
 "../tm4c123gh6pge.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -148,8 +150,8 @@ AEMQ_TivaCSeries.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "main.pp" "tm4c123gh6pge_startup_ccs.pp" 
-	-$(RM) "main.obj" "tm4c123gh6pge_startup_ccs.obj" 
+	-$(RM) "main.pp" "motor_ctl.pp" "setup.pp" "tm4c123gh6pge_startup_ccs.pp" 
+	-$(RM) "main.obj" "motor_ctl.obj" "setup.obj" "tm4c123gh6pge_startup_ccs.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

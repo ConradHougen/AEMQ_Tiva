@@ -1,1 +1,1 @@
-"./main.obj" "./tm4c123gh6pge_startup_ccs.obj" "../tm4c123gh6pge.cmd" -l"libc.a" -l"C:\ti\TivaWare_C_Series-2.0.1.11577\driverlib\ccs\Debug\driverlib.lib" 
+"./main.obj" "./motor_ctl.obj" "./setup.obj" "./tm4c123gh6pge_startup_ccs.obj" "../tm4c123gh6pge.cmd" -l"libc.a" -l"C:\ti\TivaWare_C_Series-2.0.1.11577\driverlib\ccs\Debug\driverlib.lib" 
